@@ -1,0 +1,32 @@
+﻿<Controls:MetroWindow x:Class="Metro.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        xmlns:local="clr-namespace:Metro"
+        mc:Ignorable="d"
+        ShowIconOnTitleBar ="True"
+        Title="Filimo User Grabber Bt FreeMan OpenSource" Height="705.307" Width="818.68" Loaded="MetroWindow_Loaded" WindowStartupLocation="CenterScreen">
+
+    <Grid Margin="0,0,0,1" HorizontalAlignment="Left" Width="824">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="178*"/>
+            <ColumnDefinition Width="43*"/>
+            <ColumnDefinition Width="197*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="89*"/>
+            <RowDefinition Height="55*"/>
+            <RowDefinition Height="448*"/>
+        </Grid.RowDefinitions>
+        <Button x:Name="btngrab" Content="GrabUsers" Margin="18,0,103,22" Height="64" VerticalAlignment="Bottom" FontFamily="Century Gothic" FontSize="16" Background="#FFFBBC05" Cursor="Hand" Click="btngrab_Click" FontWeight="Normal"/>
+        <Button x:Name="btnnewpostlink" Content="Add New Post Links" Margin="123,0,30,22" Height="64" VerticalAlignment="Bottom" FontFamily="Century Gothic" FontSize="16" Background="#FFFBBC05" Grid.Column="2" Width="223" Cursor="Hand" FontWeight="Normal" Click="btnnewpostlink_Click"/>
+        <Button x:Name="btnsave" Content="Save Results" Margin="293,0,308,22" Height="64" VerticalAlignment="Bottom" FontFamily="Century Gothic" FontSize="16" Background="#FFFBBC05" Grid.ColumnSpan="3" Cursor="Hand" FontWeight="Normal" Click="btnsave_Click"/>
+        <TextBox x:Name="txtresult" Margin="0,0,29,183" TextWrapping="Wrap" Grid.RowSpan="3" IsEnabled="True" FontFamily="Century Gothic" Grid.ColumnSpan="3" VerticalScrollBarVisibility="Visible" Controls:ScrollViewerHelper.IsHorizontalScrollWheelEnabled="True" Cursor="IBeam" HorizontalAlignment="Right" Width="777" Height="401" VerticalAlignment="Bottom" FontSize="18"/>
+        <Button x:Name="btnabout" Content="About" Margin="232,0,29,70" FontFamily="Century Gothic" FontSize="16" Background="#FFFBBC05" Cursor="Hand" FontWeight="Normal" Grid.Row="2" Grid.Column="2" Height="43" VerticalAlignment="Bottom" Click="btnabout_Click"/>
+        <Image HorizontalAlignment="Left" Height="156" Margin="45,330,0,0" Grid.Row="2" VerticalAlignment="Top" Width="221" Source="image/Filimo.PNG"/>
+        <Label Content="OpenSource For Educational Use Only" Margin="266,403,250,0" Grid.Row="2" FontSize="16" Grid.ColumnSpan="3" FontFamily="Century Gothic" Foreground="#FFFEC23B" FontWeight="Bold" Height="32" VerticalAlignment="Top"/>
+
+    </Grid>
+</Controls:MetroWindow>
